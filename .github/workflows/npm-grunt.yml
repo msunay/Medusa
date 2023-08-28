@@ -23,7 +23,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Remove node_modules
-      run: cd server && rm -R server/node_modules
+      run: cd server && rm -R node_modules
       
     - name: Install Server Deps
       run: cd server && npm ci
