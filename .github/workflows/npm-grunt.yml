@@ -26,6 +26,4 @@ jobs:
       run: cd server && npm ci
         
     - name: Build
-      run: | 
-        cd server && tsc 
-        grunt
+      run: cd server && npm run tsc
